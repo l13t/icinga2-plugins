@@ -12,8 +12,6 @@ def oom_check(mode, verbose=False):
     ### Hack to remove empty strings
     while '' in _dmesg_res:
         _dmesg_res.remove('')
-    #print(dmesg_results)
-    print(mode)
     exitcode=0
     if len(_dmesg_res) > 2:
         message = "CRITICAL: There are couple of OOM events. To reset erro run 'dmesg -c'."
@@ -50,7 +48,6 @@ def gtfo(exitcode, message=''):
 
 def main():
     args = parse_args()
-    #print(args.mode)
     exitcode, message = oom_check(args.mode, args.verbose)
     gtfo(exitcode, message)
 

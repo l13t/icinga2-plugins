@@ -4,6 +4,29 @@
 
 Originaly written by Michael Wyraz. [Link to nagios exchange](https://exchange.nagios.org/directory/Plugins/Backup-and-Recovery/Bacula/check_bacula_lastbackup-2Epl/details).
 
+```bash
+check_bacula_lastbackup.pl 1.0 Nagios Plugin
+
+===========================================================================
+ERROR: Missing or wrong arguments!
+===========================================================================
+
+This script checks before how many hours the last successfull
+backup of a certain client was done.
+
+
+The following options are available:
+   -bconsole-command=path    path to the bconsole command (/usr/local/sbin/bconsole)
+   -client=text              bacula client to check
+   -level=[*|F|D|I]          level of backup to check (*=any, F=full, D=differential, I=incremental - default: any)
+   -warningAge=hours         if the last backup is older than 24 hours, status is warning
+   -criticalAge=hours        if the last backup is older than 48 hours, status is critical
+
+ Options may abbreviated!
+This script comes with ABSOLUTELY NO WARRANTY
+This programm is licensed under the terms of the GNU General Public License
+```
+
 ## check\_emc\_isilon.py
 
 Plugin to check some status information about EMC Isilon storage system over snmp.
@@ -19,6 +42,21 @@ Simple check if there are errors and warnings in nginx configuration. Because de
 ## check_oom.py
 
 Check if there are OOM in your system. ATM it check all dmesg output. If you want after check make it green again, you need to run dmesg -c.
+
+```bash
+usage: check_oom.py [-h] [-m {warning,critical,default}] [-v]
+
+Check for OOM killer events
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m {warning,critical,default}, --mode {warning,critical,default}
+                        Mode of results for this check: warning, critical,
+                        default
+  -v, --verbose         Show verbose output from demsg about OOM killer events
+
+check_oom.py: v.0.2 by Dmytro Prokhorenkov
+```
 
 ## check_gitlab.py
 
