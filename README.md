@@ -1,6 +1,6 @@
 # icinga2-plugins
 
-## check_bacula.pl
+## check\_bacula.pl
 
 Originaly written by Michael Wyraz. [Link to nagios exchange](https://exchange.nagios.org/directory/Plugins/Backup-and-Recovery/Bacula/check_bacula_lastbackup-2Epl/details). Added this script to my repo because didn't want to lose this script.
 
@@ -31,7 +31,7 @@ This programm is licensed under the terms of the GNU General Public License
 
 Plugin to check some status information about EMC Isilon storage system over snmp.
 
-## check_ipvs.py
+## check\_ipvs.py
 
 Checks status of ldirector load balancer.
 
@@ -39,7 +39,7 @@ Checks status of ldirector load balancer.
 
 Simple check if there are errors and warnings in nginx configuration. Because devops and devs don't care about that.
 
-## check_oom.py
+## check\_oom.py
 
 Check if there are OOM in your system. ATM it check all dmesg output. If you want after check make it green again, you need to run dmesg -c.
 
@@ -58,7 +58,7 @@ optional arguments:
 check_oom.py: v.0.2 by Dmytro Prokhorenkov
 ```
 
-## check_gitlab.py
+## check\_gitlab.py
 
 Checks [Gitlab](https://gitlab.com) application health.
 
