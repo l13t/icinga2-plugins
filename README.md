@@ -2,7 +2,7 @@
 
 ## check_bacula.pl
 
-Originaly written by Michael Wyraz. [Link to nagios exchange](https://exchange.nagios.org/directory/Plugins/Backup-and-Recovery/Bacula/check_bacula_lastbackup-2Epl/details).
+Originaly written by Michael Wyraz. [Link to nagios exchange](https://exchange.nagios.org/directory/Plugins/Backup-and-Recovery/Bacula/check_bacula_lastbackup-2Epl/details). Added this script to my repo because didn't want to lose this script.
 
 ```bash
 check_bacula_lastbackup.pl 1.0 Nagios Plugin
